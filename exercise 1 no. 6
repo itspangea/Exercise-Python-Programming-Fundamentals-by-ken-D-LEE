@@ -1,0 +1,29 @@
+belanja = float( input ("jumlah belanja :"))
+
+kembalian =100000-belanja
+
+R50 = int(kembalian/50000)
+R50s = kembalian%50000
+R20 = int(R50s/20000)
+R20s = R50s%20000
+R10 = int(R20s/10000)
+R10s = R20s%10000
+R5 = int (R10s/5000)
+R5s = R10s%5000
+R2 = int (R5s/2000)
+R2s = R5s%2000
+R1 = int (R2s/1000)
+R1s = R2s%1000
+R05 = int (R1s/500)
+R05S = R1s%500
+R01 = int (R05S/100)
+
+print ("kembaliannya adalah : ")
+print (R50 , "lembar 50000")
+print (R20 , "lembar 20000")
+print (R10 , "lembar 10000")
+print (R5 , "lembar 5000")
+print (R2 , "lembar 2000")
+print (R1 , "lembar 1000")
+print (R05 , "koin 500")
+print (R01 , "koin 100")
