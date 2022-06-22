@@ -1,0 +1,23 @@
+panjang = float (input ( "masukkan panjang yang ingin di konversi : "))
+
+yard = int(panjang/91.44)
+sisayard = panjang%91.44
+feet= int(sisayard/30.48)
+sisafeet = sisayard%30.48
+inci= sisafeet/2.54
+
+if yard == 1:
+    yardh = "{} yard".format(yard)
+elif yard >1:
+    yardh = "{} yards".format(yard)
+else:
+    yardh =""
+
+if feet ==1:
+    feeth = "{} feet".format(feet)
+elif feet >1:
+    feeth ="{} feets".format(feet)
+else:
+    feeth= ""
+
+print ("hasilnya adalah",yardh, feeth, inci , "inci")
