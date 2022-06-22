@@ -1,0 +1,60 @@
+
+# sorry for using my country currency, because i didnt undestand US's
+
+
+belanja = float( input ("jumlah belanja :"))
+nominal =float (input ("masukkan nominal : "))
+
+kembalian = nominal-belanja
+
+R50 = int(kembalian/50000)
+R50s = kembalian%50000
+R20 = int(R50s/20000)
+R20s = R50s%20000
+R10 = int(R20s/10000)
+R10s = R20s%10000
+R5 = int (R10s/5000)
+R5s = R10s%5000
+R2 = int (R5s/2000)
+R2s = R5s%2000
+R1 = int (R2s/1000)
+R1s = R2s%1000
+R05 = int (R1s/500)
+R05S = R1s%500
+R01 = int (R05S/100)
+
+
+if (R50 > 0 ):
+    HR50 = "{} lembar 50 ribu".format(R50)
+else :
+    HR50 = ""
+if (R20 > 0 ):
+    HR20 = "{} lembar 20 ribu".format(R20)
+else:
+    HR20 = ""
+if (R10 > 0 ):
+    HR10 = "{} lembar 10 ribu".format(R10)
+else:
+    HR10 = ""
+if (R5 > 0 ):
+    HR5 = "{} lembar 5 ribu".format(R5)
+else:
+    HR5 = ""
+if (R2 > 0 ):
+    HR2 = "{} lembar 2 ribu".format(R2)
+else:
+    HR2 = ""
+if (R1 > 0 ):
+    HR1 = "{} lembar ribu".format(R1)
+else:
+    HR1 = ""
+if (R01 > 0 ):
+    HR01 = "{} koin 100".format(R01)
+else:
+    HR01 = ""
+if (R05 > 0 ):
+    HR05 = "{} koin 500 ".format(R05)
+else:
+    HR05 = ""
+
+print ("kembaliannya adalah ", HR50, HR20 , HR10 , HR5, HR2 , HR1,HR01,HR05 )
