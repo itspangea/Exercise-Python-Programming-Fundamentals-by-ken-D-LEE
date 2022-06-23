@@ -1,0 +1,14 @@
+
+# program for change number to binari
+
+
+angka = int (input ("plase enter number : "))
+print ("cek" , bin(angka))
+binari = ""
+
+while angka > 0:
+    sisa = str(angka%2)
+
+    binari = sisa + binari
+    angka = angka // 2
+print (binari)
