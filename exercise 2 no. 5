@@ -1,14 +1,18 @@
-angka = int(input ("please enter integer less than 50 : "))
+try :
+    angka = int(input ("please enter integer less than 50 : "))
 
-x = angka
+    if (angka < 50) :
+        x = angka
 
-if x%2 == 0 :
-    print(x, "not a prime number")
-elif  x%3 ==0 :
-    print(x, "not a prime number")
-elif x%5 ==0:
-    print(x, "not a prime number")
-elif x%7 ==0:
-    print(x, "not a prime number")
-else :
-    print (x, "is a prime number")
+    if x%2 == 0 :
+        print(x, "not a prime number")
+    elif  x%3 ==0 :
+        print(x, "not a prime number")
+    elif x%5 ==0:
+        print(x, "not a prime number")
+    elif x%7 ==0:
+        print(x, "not a prime number")
+    else :
+        print (x, "is a prime number")
+except :
+    print ("invalid number")
