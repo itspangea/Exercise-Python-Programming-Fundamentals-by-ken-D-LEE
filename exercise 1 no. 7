@@ -1,0 +1,33 @@
+program for change binary to decimal
+
+#using for looping with len
+biner =  input ("input your binary number : ")
+
+angka = len(biner)
+binery = int (biner)
+jumlah = 0
+for i in range (angka) :
+
+    digit = binery % 10
+
+    jumlah = jumlah + digit*(2**i)
+
+    binery = int (binery/10)
+
+print ("decimal value of your number : " ,jumlah)
+
+
+#other programming for change binary number to decimal
+#without len
+
+biner =  int (input ("input your binary number : "))
+
+jumlah =0
+i = 0
+while biner > 0 :
+    digit = biner %10
+    jumlah = jumlah + digit *(2**i)
+    i= i+1
+    biner = biner // 10
+
+print ("decimal value of your number : " ,jumlah)
