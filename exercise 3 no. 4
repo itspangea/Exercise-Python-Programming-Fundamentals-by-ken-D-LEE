@@ -1,0 +1,15 @@
+calculate list of number and its avarage
+
+angka =(input("input a list of number : "))
+
+list =angka.split()
+newlist =[]
+
+for i in list :
+    j=float (i)
+
+    if j < 100 :
+        newlist.append(j)
+
+
+print ("series of number between 1-100 is" , newlist)
