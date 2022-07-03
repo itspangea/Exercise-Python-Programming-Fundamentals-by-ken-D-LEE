@@ -1,0 +1,25 @@
+#program for genarate Prime number between 1-1000
+#list is list of prime number and list1 dont.
+list =[]
+list1 =[]
+
+#because of 2 can't start inner looping, input it manually
+
+
+for i in range (2,1000) :
+    periksa = False
+
+    for j in range (2,i ):
+
+        #if number can divide by 2 until number-1, that number is not a prime number
+
+        if i%j == 0:
+            periksa = True
+
+    if periksa :
+        list1.append(i)
+    else :
+        list.append (i)
+
+
+print("print number between 1-1000 is", list)
