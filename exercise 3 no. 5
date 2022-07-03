@@ -1,0 +1,10 @@
+angka =(input("input a list : "))
+
+list =angka.split()
+
+newlist=[]
+
+for i in reversed (list):
+    newlist.append(i)
+
+print (newlist)
