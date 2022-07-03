@@ -1,0 +1,41 @@
+#GPA calculator
+
+total = int (input ("please input total of your class in this semester : "))
+
+poin= 0
+totalcredit = 0
+for i in range (total) :
+    credit = input ("input credit of this class : ")
+    grade = input ("input your grade in this class : ")
+
+    credit1 = float (credit) #convers str to float
+    if grade == "A" :
+        credit2= credit1*4
+    elif grade == "A-" :
+        credit2= credit1*3.7
+    elif grade == "B+" :
+        credit2= credit1*3.3
+    elif grade == "B" :
+        credit2= credit1*3
+    elif grade == "B-" :
+        credit2= credit1*2.7
+    elif grade == "C+" :
+        credit2= credit1*2.3
+    elif grade == "C" :
+        credit2= credit1*2
+    elif grade == "C-" :
+        credit2= credit1*1.7
+    elif grade == "D+" :
+        credit2= credit1*1.3
+    elif grade == "D" :
+        credit2= credit1*1
+    elif grade == "D-" :
+        credit2= credit1*0.7
+    else :
+        credit2=credit1*0
+
+
+
+    poin= poin + credit2
+    totalcredit= totalcredit + credit1
+print("your GPA is " , poin/totalcredit)
