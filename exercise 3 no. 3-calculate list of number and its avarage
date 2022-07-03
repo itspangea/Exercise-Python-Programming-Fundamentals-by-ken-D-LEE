@@ -1,0 +1,16 @@
+#calculate list of number and its avarage
+
+angka =(input("input a list of number : "))
+
+list =angka.split()
+count=0
+
+for i in list : #looping that using for count content of list
+    count=count+1
+
+total=0
+for j in list :
+    k=float(j)
+    total = total+k
+print ("avarage :" ,total/count)
+print ("count of list" ,count)
