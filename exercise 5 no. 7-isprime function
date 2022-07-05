@@ -1,20 +1,26 @@
-def isprime (x) :
+try :
+    def isprime (x) :
 
-    for i in range (2,x) :
-        statmen = True
-        j = int (i)
-
-        if x % j == 0 :
-
-            statmen= False
-
-        else :
+        for i in range (2,x) :
             statmen = True
+            j = int (i)
 
-    return statmen
-x=int (input ("input number :"))
+            if x % j == 0 :
 
-if isprime (x):
-    print (x , " is a prime number")
-else :
-    print (x , " is not a prime number")
+                statmen= False
+
+            else :
+                statmen = True
+
+        return statmen
+    x=int (input ("input number :"))
+
+    if isprime (x):
+        print (x , " is a prime number")
+    else :
+        print (x , " is not a prime number")
+
+except :
+    print ("please input a integer")
+
+
