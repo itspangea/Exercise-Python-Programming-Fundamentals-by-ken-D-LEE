@@ -1,0 +1,19 @@
+def alleven (x) :
+
+    lst = []
+
+    angka= x.split ()
+    for i in angka :
+        j = int (i)
+        if j % 2 == 0 :
+            lst.append(j)
+    print (lst)
+    
+    return lst
+
+
+x= input ("input series of number (use (space) as splitter) : ")
+
+alleven(x)
+
+
