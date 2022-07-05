@@ -1,0 +1,23 @@
+def ispalindrome (x) :
+
+    jumlah = len(x) #count caracter
+    jml = jumlah- 1 # because counting start with 0
+    statmen = False
+    for i in x :
+        if i == x[jml] :
+            jml=jml-1
+            statmen= True
+        else :
+            statmen = False
+            break
+
+
+    return statmen
+
+
+x=input ("input a palindrome number :")
+
+if ispalindrome(x):
+    print (x + " is a palindrome number")
+else :
+    print (x + " is not a palindrome number")
