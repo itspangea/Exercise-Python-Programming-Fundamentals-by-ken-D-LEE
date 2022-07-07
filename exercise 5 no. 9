@@ -1,0 +1,15 @@
+def sumit (x) :
+    lst = x.split()
+    jml=0
+    for i in lst :
+        j= int(i)
+        jml = jml + j
+
+
+
+    return jml
+
+
+a = input ("please a list of number (use space as splitter) : ")
+
+print ("sum of all that number is ", sumit(a))
