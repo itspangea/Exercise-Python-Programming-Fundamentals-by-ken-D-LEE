@@ -1,0 +1,14 @@
+def sumfaktors (angka) :
+    lst =[]
+    jml = 0
+    intangka = int (angka)
+    for i in range (1,intangka+1) :
+
+        if intangka % i == 0 :
+            lst.append(i)
+            jml =jml + i
+    return "factor of your number ",  lst , " sum of your factors number is " , jml
+
+angka1 = input ("input your number ")
+
+print (sumfaktors(angka1))
