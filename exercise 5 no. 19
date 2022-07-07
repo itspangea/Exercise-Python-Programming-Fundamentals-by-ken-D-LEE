@@ -1,0 +1,21 @@
+def oddelement (kalimat) :
+    kal = " "
+    lst = list (kalimat)
+    hitung = len (kalimat)
+    n = hitung
+    for i in range (hitung) :
+
+        if  i % 2 == 1 :
+            kal = kal + lst [i]
+
+
+    return kal
+
+
+
+    return kal
+
+
+sentence = input ("input sentence ")
+
+print ( oddelement(sentence))
