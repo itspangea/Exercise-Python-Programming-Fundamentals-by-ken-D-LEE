@@ -1,0 +1,13 @@
+def jumlah (x,y) :
+
+    jml = 0
+    for i in range (x,y+1) :
+        jml = jml + i
+
+    return jml
+
+a = int (input ("inuput first number : "))
+
+b = int (input ("input the second number : "))
+
+print ("sum between this 2 number is",jumlah(a,b) )
