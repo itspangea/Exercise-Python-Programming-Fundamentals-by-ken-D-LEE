@@ -1,0 +1,11 @@
+def reverssentence (kalimat) :
+    kal = " "
+    for i in reversed (kalimat) :
+        kal = kal + i
+
+    return kal
+
+
+sentence = input ("input sentence ")
+
+print ( reverssentence(sentence))
