@@ -1,0 +1,9 @@
+x = input ("input first series  : ")
+y = input ("input second series : ")
+
+x1 = tuple(x)
+y1 = tuple(y)
+
+z = zip(x1, y1)
+
+print(tuple(z))
